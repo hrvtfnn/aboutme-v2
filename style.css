@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+} 
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('assets/background.png') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Caviar Dreams', sans-serif;
+    color: #0b0b10
+}
+
+/* Position */
+
+.profile-card {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(211, 231, 249, 0.46);
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 25px 5px;
+}
+
+img{
+    height: 520px;
+}
+
+.profile-card img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.5s;
+}
+
+.profile-card:hover img{
+    left: 22%;
+    height: 420px;
+}
+
+.profile-card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    transition: 0.5s;
+    padding: 20px 20px 20px 40px;
+    opacity: 0%;
+    visibility: hidden;
+}
+
+.profile-card:hover .content{
+    left: 43%;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Display */
+
+button{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: rgba(211, 231, 249, 0.46);
+    padding: 15px;
+    border-color:  rgba(211, 231, 249, 0.46);
+    border-radius: 20px;
+    box-shadow: rgba(33, 37, 84, 0.185) 2px 2px 8px 3px;
+    margin: 15px auto 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B7B0EB;
+    color: #000;
+    transition: all 0.25s ease-in-out;
+  }
+
+.links{
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.nav{
+    color: rgba(10, 11, 12, 0.46);
+    padding: 3%;
+}
+  
+a.nav:hover {
+    color: #847bba;
+    transition: all 0.25s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+}
+  
+li {
+    display: inline;
+}
+
+.content{
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 40px;
+
+}
+
+span{
+    font-weight: bolder;
+}
+
+h3, p{
+    font-size: 24px;
+}
+
+.about{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* Responsive?? */
+
+@media (max-width: 991px){
+    .profile-card{
+        position: relative;
+        width: auto;
+        max-width: 900px;
+        transition: 0.5s;
+    }
+
+    .profile-card:hover{
+        height: 600px;
+    }
+
+    .profile-card:hover img{
+        left: 22%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 770px){
+    .profile-card{
+        position: relative;
+        width: auto;
+        max-width: calc(100vh - 20px);
+        transition: 0.5s;
+    }
+
+    .profile-card:hover{
+        height: 750px;
+    }
+
+    img{
+        height: 350px;
+    }
+
+    .profile-card:hover img{
+        height: 300px;
+        top: 0%;
+        left: 50%;
+    }
+
+    .content, h1, h2, h3, p, .about, .links{
+        font-size: 24px;
+        line-height: 28px;
+        padding: 20px auto 20px;
+    }
+    
+    .profile-card .content{
+        position: relative;
+        width: 100%;
+        left: 0%;
+        transition: 0.5s;
+        padding: 300px 20px 0px 20px;
+    }
+
+    .profile-card:hover .content, .about, button, .links{
+        align-items: center;
+        left: 0%;
+
+        
+    }
+
+}
+
+@media (max-width: 617px){
+    .profile-card{
+        position: relative;
+        width: auto;
+        max-width: calc(100vh - 20px);
+        transition: 0.5s;
+    }
+
+    .profile-card:hover{
+        height: 750px;
+    }
+
+    img{
+        height: 350px;
+    }
+
+    .profile-card:hover img{
+        height: 300px;
+        top: 0%;
+        left: 50%;
+    }
+
+    .content, h1, h2, h3, p, .about, .links{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 20px auto 20px;
+    }
+    
+    .profile-card .content{
+        position: relative;
+        width: 100%;
+        left: 0%;
+        transition: 0.5s;
+        padding: 300px 20px 0px 20px;
+    }
+
+    .profile-card:hover .content, .about, button, .links{
+        align-items: center;
+        left: 0%;
+
+        
+    }
+
+}
