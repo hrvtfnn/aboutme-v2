@@ -1,3 +1,49 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -137,7 +183,7 @@ h3, p{
 
 /* Responsive?? */
 
-@media (max-width: 991px){
+@media (max-width: 992px){
     .profile-card{
         position: relative;
         width: auto;
@@ -155,7 +201,7 @@ h3, p{
     }
 }
 
-@media (max-width: 770px){
+@media (max-width: 768px){
     .profile-card{
         position: relative;
         width: auto;
@@ -172,7 +218,7 @@ h3, p{
     }
 
     .profile-card:hover img{
-        height: 300px;
+        height: 320px;
         top: 0%;
         left: 50%;
     }
@@ -188,7 +234,7 @@ h3, p{
         width: 100%;
         left: 0%;
         transition: 0.5s;
-        padding: 300px 20px 0px 20px;
+        padding: 300px 0px 0px 20px;
     }
 
     .profile-card:hover .content, .about, button, .links{
@@ -200,7 +246,7 @@ h3, p{
 
 }
 
-@media (max-width: 617px){
+@media (max-width: 600px){
     .profile-card{
         position: relative;
         width: auto;
@@ -225,7 +271,7 @@ h3, p{
     .content, h1, h2, h3, p, .about, .links{
         font-size: 16px;
         line-height: 20px;
-        padding: 0px 20px 0px 0px;
+        padding: 0px 0px 2px 0px;
     }
     
     .profile-card .content{
@@ -233,7 +279,7 @@ h3, p{
         width: 100%;
         left: 0%;
         transition: 0.5s;
-        padding: 300px 20px 0px 20px;
+        padding: 250px 20px 0px 20px;
     }
 
     .profile-card:hover .content, .about, button, .links{
